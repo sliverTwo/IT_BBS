@@ -1,0 +1,9 @@
+body .bg-class{
+    background: url(bg-yellow.png) repeat;
+}
+body .whitesmoke-bg-class{
+    background: whitesmoke;
+}
+body .lightgoldenrodyellow-bg-class{
+    background: lightgoldenrodyellow;
+}

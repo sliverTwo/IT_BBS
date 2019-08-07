@@ -1,0 +1,53 @@
+html,body{
+    margin: 0;
+    padding:0;
+    height: 100%;
+    background: whitesmoke;
+
+}
+.bbs_container {
+    min-height:100%;
+    height: auto !important;
+    height: 100%; /*IE6不识别min-height*/
+    position: relative;
+}
+.bbs_header {
+    /*background: #ff0;*/
+    /*padding: 10px;*/
+}
+.bbs_page {
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 60px;/*等于footer的高度*/
+}
+.bbs_footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;/*脚部的高度*/
+    margin-top: -60px;
+    background: #6cf;
+    clear:both;
+}
+/*=======主体内容部分=======*/
+.bbs_left {
+    width: 220px;
+    float: left;
+    margin-right: 20px;
+    /*background: lime;*/
+}
+.bbs_content {
+    /*background: orange;*/
+    float: left;
+    width: 480px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.bbs_right{
+    /*background: green;*/
+    float: right;
+    width: 220px;
+}
+.bbs_footerPush{
+    height: 60px;
+}

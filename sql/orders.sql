@@ -1,0 +1,11 @@
+INSERT INTO `orders` (`order_id`, `user_id`, `score`, `money`, `finished`, `createtime`, `finished_time`) VALUES ('147F6CD084EB48979F9ED293BC6786CE', 13, 10, 1, 0, '2018-5-19 08:24:51', NULL);
+INSERT INTO `orders` (`order_id`, `user_id`, `score`, `money`, `finished`, `createtime`, `finished_time`) VALUES ('1BA86ADBEB54485090E73081040B0590', 13, 50, 5, 0, '2018-5-14 21:21:25', NULL);
+INSERT INTO `orders` (`order_id`, `user_id`, `score`, `money`, `finished`, `createtime`, `finished_time`) VALUES ('32CDFCECC76D479880542D6EDF122237', 13, 50, 5, 0, '2018-5-14 21:25:59', NULL);
+INSERT INTO `orders` (`order_id`, `user_id`, `score`, `money`, `finished`, `createtime`, `finished_time`) VALUES ('5071BE6309984184859B882C96247A4F', 13, 100, 10, 0, '2018-5-14 21:24:58', NULL);
+INSERT INTO `orders` (`order_id`, `user_id`, `score`, `money`, `finished`, `createtime`, `finished_time`) VALUES ('58E459F592B4429A9FBB46EA83E1B491', 13, 50, 5, 1, '2018-5-19 11:21:55', '2018-5-19 11:22:41');
+INSERT INTO `orders` (`order_id`, `user_id`, `score`, `money`, `finished`, `createtime`, `finished_time`) VALUES ('7839EAF920BC4AD8B29C9E82A39EB026', 13, 50, 5, 0, '2018-5-14 21:29:19', NULL);
+INSERT INTO `orders` (`order_id`, `user_id`, `score`, `money`, `finished`, `createtime`, `finished_time`) VALUES ('935310BFE84D49C0BEBEC87FE62FA924', 13, 10, 1, 0, '2018-5-8 14:49:36', NULL);
+INSERT INTO `orders` (`order_id`, `user_id`, `score`, `money`, `finished`, `createtime`, `finished_time`) VALUES ('AAB0F8360F0E400AA29ABB1C81C22341', 13, 100, 10, 0, '2018-5-14 21:24:52', NULL);
+INSERT INTO `orders` (`order_id`, `user_id`, `score`, `money`, `finished`, `createtime`, `finished_time`) VALUES ('AADAEB185D064FDCA054EBE997BF1FE0', 13, 20, 2, 0, '2018-5-18 22:49:08', NULL);
+INSERT INTO `orders` (`order_id`, `user_id`, `score`, `money`, `finished`, `createtime`, `finished_time`) VALUES ('B358C02B85324AFCB6D8629ABB175755', 13, 100, 10, 0, '2018-5-14 21:25:54', NULL);
+INSERT INTO `orders` (`order_id`, `user_id`, `score`, `money`, `finished`, `createtime`, `finished_time`) VALUES ('D9F397F6AFF44F638ECC6B4E7C724041', 13, 10, 1, 0, '2018-5-14 21:25:19', NULL);

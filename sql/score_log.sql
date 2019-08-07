@@ -1,0 +1,16 @@
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('00981D10B2FC4597831C8A3413F359CE', 13, '发布问题：这两个if else是一样的吗?', -3, '2018-5-14 21:18:53');
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('064E0D531D5440F0B39BA5DB46A272B0', 13, '发布问题：java异常', -3, '2018-5-8 14:50:55');
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('1C902D7EF52C4057ACE0EE522E697898', 14, '下载文件Socket_WebSocket客户端程序v120.zip', -1, '2018-5-19 08:00:59');
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('1D0478A8EEB443748A093F8D9A583BA7', 4, '下载文件Socket_WebSocket客户端程序v120.zip', -1, '2018-5-8 15:15:38');
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('3CE52694ABD2480EB6DF25F16D5AD8D4', 13, '充值积分', 50, '2018-5-19 11:22:41');
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('42D9BEBEEE5F45A0A972DB118A950380', 13, '下载文件WebSocket压力并发测试v106.zip', -1, '2018-5-18 22:13:24');
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('63C73BAB05D0491DBA92EB02CAA32A40', 13, 'sliver下载文件Socket_WebSocket客户端程序v120.zip', 1, '2018-5-19 08:00:59');
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('6DF3744F398F441BBBD7F4EC1798AC89', 14, 'test下载文件WebSocket压力并发测试v106.zip', 1, '2018-5-18 19:00:10');
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('73F075B01A3142D0B441BE91C7B95AA7', 13, 'sliver下载文件Socket_WebSocket客户端程序v120.zip', 1, '2018-5-19 08:00:59');
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('906A4CEA50A74EC2A2AD0C7D93BE5143', 13, '发布问题：如何从jsp页面向mysql按条件更新数据', 3, '2018-5-19 11:21:48');
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('99B3F4542A174706AE35A87FE506A32E', 13, 'sliver下载文件Socket_WebSocket客户端程序v120.zip', 1, '2018-5-8 15:15:38');
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('C3148D1567B048A78422285E5AA054D1', 14, '下载文件Socket_WebSocket客户端程序v120.zip', -1, '2018-5-19 08:00:59');
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('CDA5223443494B2689BAEB97875F189A', 13, '下载文件WebSocket压力并发测试v106.zip', -1, '2018-5-18 19:00:10');
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('D9B385D2E3954DA290A74C618CC3777A', 13, '发布问题：关于SQLdistinct和order by的问题', -3, '2018-5-14 21:11:49');
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('DC99B0CC0D344236B24E0CCF6F5BFDD3', 14, 'test下载文件WebSocket压力并发测试v106.zip', 1, '2018-5-18 22:13:24');
+INSERT INTO `score_log` (`id`, `user_id`, `content`, `score`, `createtime`) VALUES ('EC89A5A506744FA399031FB9560AD864', 13, '发布问题：cs', -3, '2018-5-19 08:28:53');

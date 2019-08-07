@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sliver.mapper.FavoriteVoMapper" >
+  <resultMap id="BaseResultMap" type="com.sliver.pojo.FavoriteVo" >
+    <result column="id" property="id" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="board_name" property="boardName" jdbcType="VARCHAR" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="post_user_id" property="postUserId" jdbcType="INTEGER" />
+    <result column="favorite_time" property="favoriteTime" jdbcType="TIMESTAMP" />
+    <result column="post_id" property="postId" jdbcType="VARCHAR" />
+    <result column="altertime" property="altertime" jdbcType="TIMESTAMP" />
+    <result column="view_num" property="viewNum" jdbcType="INTEGER" />
+    <result column="favorite_user_id" property="favoriteUserId" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, createtime, user_name, board_name, title, post_user_id, favorite_time, post_id, 
+    altertime, view_num, favorite_user_id
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.sliver.pojo.FavoriteVoExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from favorite_vo
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.sliver.pojo.FavoriteVoExample" >
+    delete from favorite_vo
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.sliver.pojo.FavoriteVo" >
+    insert into favorite_vo (id, createtime, user_name, 
+      board_name, title, post_user_id, 
+      favorite_time, post_id, altertime, 
+      view_num, favorite_user_id)
+    values (#{id,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, #{userName,jdbcType=VARCHAR}, 
+      #{boardName,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, #{postUserId,jdbcType=INTEGER}, 
+      #{favoriteTime,jdbcType=TIMESTAMP}, #{postId,jdbcType=VARCHAR}, #{altertime,jdbcType=TIMESTAMP}, 
+      #{viewNum,jdbcType=INTEGER}, #{favoriteUserId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.sliver.pojo.FavoriteVo" >
+    insert into favorite_vo
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="createtime != null" >
+        createtime,
+      </if>
+      <if test="userName != null" >
+        user_name,
+      </if>
+      <if test="boardName != null" >
+        board_name,
+      </if>
+      <if test="title != null" >
+        title,
+      </if>
+      <if test="postUserId != null" >
+        post_user_id,
+      </if>
+      <if test="favoriteTime != null" >
+        favorite_time,
+      </if>
+      <if test="postId != null" >
+        post_id,
+      </if>
+      <if test="altertime != null" >
+        altertime,
+      </if>
+      <if test="viewNum != null" >
+        view_num,
+      </if>
+      <if test="favoriteUserId != null" >
+        favorite_user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="userName != null" >
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="boardName != null" >
+        #{boardName,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null" >
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="postUserId != null" >
+        #{postUserId,jdbcType=INTEGER},
+      </if>
+      <if test="favoriteTime != null" >
+        #{favoriteTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="postId != null" >
+        #{postId,jdbcType=VARCHAR},
+      </if>
+      <if test="altertime != null" >
+        #{altertime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="viewNum != null" >
+        #{viewNum,jdbcType=INTEGER},
+      </if>
+      <if test="favoriteUserId != null" >
+        #{favoriteUserId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.sliver.pojo.FavoriteVoExample" resultType="java.lang.Integer" >
+    select count(*) from favorite_vo
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update favorite_vo
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createtime != null" >
+        createtime = #{record.createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.userName != null" >
+        user_name = #{record.userName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.boardName != null" >
+        board_name = #{record.boardName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.title != null" >
+        title = #{record.title,jdbcType=VARCHAR},
+      </if>
+      <if test="record.postUserId != null" >
+        post_user_id = #{record.postUserId,jdbcType=INTEGER},
+      </if>
+      <if test="record.favoriteTime != null" >
+        favorite_time = #{record.favoriteTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.postId != null" >
+        post_id = #{record.postId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.altertime != null" >
+        altertime = #{record.altertime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.viewNum != null" >
+        view_num = #{record.viewNum,jdbcType=INTEGER},
+      </if>
+      <if test="record.favoriteUserId != null" >
+        favorite_user_id = #{record.favoriteUserId,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update favorite_vo
+    set id = #{record.id,jdbcType=VARCHAR},
+      createtime = #{record.createtime,jdbcType=TIMESTAMP},
+      user_name = #{record.userName,jdbcType=VARCHAR},
+      board_name = #{record.boardName,jdbcType=VARCHAR},
+      title = #{record.title,jdbcType=VARCHAR},
+      post_user_id = #{record.postUserId,jdbcType=INTEGER},
+      favorite_time = #{record.favoriteTime,jdbcType=TIMESTAMP},
+      post_id = #{record.postId,jdbcType=VARCHAR},
+      altertime = #{record.altertime,jdbcType=TIMESTAMP},
+      view_num = #{record.viewNum,jdbcType=INTEGER},
+      favorite_user_id = #{record.favoriteUserId,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+</mapper>

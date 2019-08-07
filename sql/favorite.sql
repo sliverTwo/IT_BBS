@@ -1,0 +1,1 @@
+INSERT INTO `favorite` (`id`, `user_id`, `post_id`, `post_title`, `createtime`) VALUES ('A2ECE060F42044F6BFBE4FA8D2450CDC', 13, '2C15035ECAFB4812B6130DADAB1AD114', '有没有懂mybatis的大神帮帮忙，很急，谢谢！！！', '2018-5-19 11:18:37');

@@ -1,0 +1,1 @@
+INSERT INTO `favorite_vo` (`id`, `createtime`, `user_name`, `board_name`, `title`, `post_user_id`, `favorite_time`, `post_id`, `altertime`, `view_num`, `favorite_user_id`) VALUES ('A2ECE060F42044F6BFBE4FA8D2450CDC', '2018-5-19 11:18:15', 'sliver', 'java', '有没有懂mybatis的大神帮帮忙，很急，谢谢！！！', 13, '2018-5-19 11:18:37', '2C15035ECAFB4812B6130DADAB1AD114', NULL, 1, 13);
